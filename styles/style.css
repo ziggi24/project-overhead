@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{ 
+    /* background: linear-gradient(#404b69, #283149); */
+    background-image: url("https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg");
+    background-size: 1920px 1280px;
+    background-position: right;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+img{ 
+    border-radius: 50%;
+    border: 4px solid black;
+    max-height: 60vh;
+    margin: 10px 0;
+}
+footer{
+    color: white;
+    display: flex;
+    align-content: flex-end;
+    max-height: 50px;
+    margin-top: auto;
+}
+.astro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+}
+.moon-stars{
+    display: flex;
+    flex-direction: row;
+}
+.astro-title{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    background: linear-gradient(rgba(71,72,92, .9),rgba(71,72,92, .2));
+    border-radius: 7%;
+    padding: 8px 25px;
+}
+.astro-body, .astro-focus{
+    max-width: 100%;
+    width: 80%;
+    color: lightgrey;
+    text-align: justify;
+    background: linear-gradient(rgba(71,72,92, .9),rgba(71,72,92, .4));
+    border-radius: 7%;
+    margin: 10px 0;
+    padding: 8px 25px;
+}
+.astro-moon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: flex-start;
+}
+.text-body{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    max-height: 30%;
+    width: 80vh;
+}

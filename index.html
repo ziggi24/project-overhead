@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="astro">
+        <section class="astro-title"">
+            <h1>OverHead</h1>
+            <p>Here's whats overhead right now</p>
+        </section>
+        <section class=" moon-stars">
+            <section class=" astro-moon">
+                <div id="contain_moon" style="text-align:center;">
+                    <div style="font-weight:bold"></div>
+                    <div
+                        style="padding:45px;background-image:radial-gradient(circle, rgba(0,25,90,.2) 60px ,rgba(0,25,90,.6) 53px, transparent 123px)">
+                    </div>
+                    <div></div>
+                    <div style="font-size:small"></div>
+                </div>
+
+                <script type="text/javascript">(function () { var d = new Date().getDate(); var m = document.querySelectorAll("#contain_moon div"); var a = new XMLHttpRequest(); var url = "https://www.icalendar37.net/lunar/api/?lang=en&month=" + (new Date().getMonth() + 1) + "&year=" + (new Date().getFullYear()) + "&size=150&lightColor=rgb(255,247,128)&shadeColor=rgb(0,0,0)&t&LDZ=" + new Date(new Date().getFullYear(), new Date().getMonth(), 1) / 1000 + ""; m[1].style.height = "150px"; a.onreadystatechange = function () { if (a.readyState == 4 && a.status == 200) { var b = JSON.parse(a.responseText); m[1].innerHTML = b.phase[d].svg; if (typeof moon_widget_loaded == "function") moon_widget_loaded(b) } }; a.open("GET", url, true); a.send() })()
+                </script>
+            </section>
+            <section class=" astro-image">
+                <img src="
+                https://www.fourmilab.ch/cgi-bin/Yoursky?date=0&utc=1998%2F02%2F06+12%3A42%3A40&jd=2450851.02963&lat=47.543679&ns=North&lon=122.290492&ew=West&moonp=on&deepm=2.5&consto=on&constn=on&limag=5.5&starnm=3.0&starbm=2.5&imgsize=640&dynimg=y&fontscale=1.0&scheme=0&elements="
+                    alt=" current star map" class="astro-image">
+            </section>
+        </section>
+        <section class="text-body">
+            <article class="astro-body">
+                <h3>Todays Horoscope</h3>
+                <p id="horo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa iste eos laborum sapiente
+                    corporis
+                    omnis
+                    nobis et magni itaque deleniti?</p>
+            </article>
+            <article class="astro-focus">
+                <h3>Big Medicine for the Week</h3>
+                <p id="focus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa iste eos laborum sapiente
+                    corporis
+                    omnis
+                    nobis et magni itaque deleniti?</p>
+            </article>
+        </section>
+    </div>
+    <script src="scripts/app.js"></script>
+    <footer>
+        <p>Copyright 2020 - Zach Sharpe</p>
+    </footer>
+</body>
+
+</html>
