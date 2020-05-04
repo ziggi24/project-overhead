@@ -1,3 +1,8 @@
+/* 
+https://www.fourmilab.ch/yoursky/custom.html
+https://github.com/tapaswenipathak/Horoscope-API
+*/
+
 console.log("connected");
 
 window.addEventListener("load", () => {
