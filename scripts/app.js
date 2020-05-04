@@ -17,7 +17,6 @@ window.addEventListener("load", () => {
         .then(data => {
             console.log(data);
             document.getElementById("horo").innerHTML = data.horoscope;
-            document.getAnimations
         });
 
     fetch(weekApi)
@@ -28,7 +27,6 @@ window.addEventListener("load", () => {
         .then(data => {
             console.log(data);
             document.getElementById("focus").innerHTML = data.horoscope;
-            document.getAnimations
         });
 });
 
